@@ -48,7 +48,7 @@ public class VirtualPetFace extends JFrame implements ActionListener{
     private Timer timer;
     
 
-    private static final String imageBase = "./pet_images/";
+    private static final String imageBase = "pet_images/";
     
     public static void main(String args[]) {
         VirtualPet newPet = new VirtualPet();   
@@ -71,7 +71,7 @@ public class VirtualPetFace extends JFrame implements ActionListener{
     public void init() {
         String curDir = System.getProperty("user.dir");
         
-        base = curDir + "/" + imageBase;
+        base = curDir + "/cam-v1" + imageBase;
         pics = new ArrayList<Image>();
         timer = new Timer(400, this);
         //timer.setInitialDelay(1000);
